@@ -16,8 +16,8 @@
                          'route' => ['course.update',$course->course_id],
                          'class'=>'form-horizontal'
                       ]) !!}
-		{!!	Form::token(); !!}
-			{{ csrf_field() }}
+	     	{!!	Form::token(); !!}
+		  	{{ csrf_field() }}
   			<div class="form-group">
     			<label >Course Code</label>
     			<input type="text" name="course_code" class="form-control"  value="{{$course->course_code}}">
@@ -32,7 +32,7 @@
   			</div>
   			
   			<button type="submit" class="btn btn-default">Update</button>
-		{!! Form::close() !!}
+		    {!! Form::close() !!}
 		</div>
 	</body>
 </html>
